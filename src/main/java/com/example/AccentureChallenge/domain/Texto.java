@@ -11,7 +11,7 @@ public class Texto {
         StringBuilder textoCompletoConvertido = new StringBuilder();
 
         for (String palavra: palavras) {
-
+            palavra = palavra.replaceAll(" ","");
             List<String> letras = Arrays.asList(palavra.split(" "));
 
             StringBuilder palavraConvertida = new StringBuilder();
